@@ -75,8 +75,8 @@ function evaluarMensaje(senderID, messageText){
 	}else if((isContain(messageText,'que')) && (isContain(messageText,'getpet'))){
 		mensaje = 'GetPet es una aplicación movil que te permite rastrear a tu mascota mediante codigos QR.';
 	}else if(isContain(messageText,'que') && isContain(messageText,'yvaganet')){
-		mensaje = 'Yvaganet es una empresa que se dedica a la innovación deberías seguirlos. Su página es la siguiente:\n https://www.yvaganet.com \nTambién los puedes seguir en facebook:\n https://www.facebook.com/yvaganetBolivia';
-		//enviarMensajeTemplate(senderID);
+		//mensaje = 'Yvaganet es una empresa que se dedica a la innovación deberías seguirlos. Su página es la siguiente:\n https://www.yvaganet.com \nTambién los puedes seguir en facebook:\n https://www.facebook.com/yvaganetBolivia';
+		enviarMensajeTemplate(senderID);
 	}else if((isContain(messageText,'hola'))){
 		mensaje = 'Hola necesitas consultarme algo?';
 	}	
